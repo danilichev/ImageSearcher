@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="@string/pref_narrow_search_key"
+        android:title="@string/narrow_search_title"
+        android:summary="@string/narrow_search_summary"
+        android:defaultValue="false"/>
+    <EditTextPreference
+        android:key="@string/pref_domain_key"
+        android:title="@string/domain_title"
+        android:summary="@string/domain_summary"
+        android:dependency="narrow_search"/>
+    <ListPreference
+        android:key="@string/pref_image_colorization_key"
+        android:title="@string/image_colorization_title"
+        android:summary="@string/image_colorization_summary"
+        android:entries="@array/image_colorization_list"
+        android:entryValues="@array/image_colorization_list_values"
+        android:dependency="narrow_search"/>
+    <ListPreference
+        android:key="@string/pref_count_of_image_key"
+        android:title="@string/count_images_list_title"
+        android:summary="@string/count_images_list_summary"
+        android:entries="@array/count_images_list"
+        android:entryValues="@array/count_images_list_values"
+        android:dependency="narrow_search"/>
+</PreferenceScreen>

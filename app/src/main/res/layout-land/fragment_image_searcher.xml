@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/editTextSearchQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_text_search_query_hint"/>
+    <Button
+        android:id="@+id/buttonSearchImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_search_image_text"/>
+    <Button
+        android:id="@+id/buttonTakePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_take_picture_text"/>
+</LinearLayout>
